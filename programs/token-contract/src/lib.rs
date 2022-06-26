@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 use anchor_spl::token;
 use anchor_spl::token::{MintTo, Token, Transfer};
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("HSbBGSSFedyV5LHGqqf9XkKL5ob8hTxawsSY6LG5CS69");
 
 #[program]
 pub mod token_contract {
