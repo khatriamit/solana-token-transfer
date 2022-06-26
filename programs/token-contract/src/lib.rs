@@ -40,11 +40,14 @@ pub mod token_contract {
 #[derive(Accounts)]
 pub struct MintToken<'info> {
     #[account(mut)]
+    /// CHECK: test
     pub mint: UncheckedAccount<'info>,
     pub token_program: Program<'info, Token>,
     #[account(mut)]
+    /// CHECK: test
     pub token_account: UncheckedAccount<'info>,
     #[account(mut)]
+    /// CHECK: test
     pub payer: AccountInfo<'info>,
 }
 
@@ -52,8 +55,10 @@ pub struct MintToken<'info> {
 pub struct TransferToken<'info> {
     pub token_program: Program<'info, Token>,
     #[account(mut)]
+    /// CHECK: test
     pub from: UncheckedAccount<'info>,
     #[account(mut)]
+    /// CHECK: test
     pub to: AccountInfo<'info>,
     #[account(mut)]
     pub signer: Signer<'info>,
